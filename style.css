@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 50px 300px;
+
+}
+button{
+
+    padding: 10px 30px;
+    margin: 3px 3px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input{
+
+    width: 40%;
+    font-size: 16px;
+    font-weight: 400;
+}
+#p1{
+
+    font-size: 28px;
+    color: red;
+    display: block;
+    
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Email Validator</h1>
+        <br>
+        
+
+        Enter an email address:
+        <br>
+        <br>
+
+        <input type="text" name="" id="email1">
+        <br>
+        <br>
+
+
+        <button onclick="validate()">Validate Email</button>
+
+        <br>
+        <br>
+
+        <p id="p1"></p>
+        
+    </div>
+
+    <script>
+
+
+        function validate(){
+
+            let email1 = document.getElementById("email1").value;
+
+            let regex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
+
+            let result = regex.test(email1);
+
+
+            if(result == true){
+
+                document.getElementById("p1").innerHTML = `${email1} is a valid email address.`;
+            }
+
+            else{
+
+
+                document.getElementById("p1").innerHTML = `${email1} is not a valid email address.`;
+            }
+
+        }
+
+    </script>
+</body>
+</html>
